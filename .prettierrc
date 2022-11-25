@@ -1,0 +1,3 @@
+{
+    "parser": "Let's put an invalid value here to disable prettier for this project! You can also find this setting: vscode>preferences>settings>plugins>prettier>require config, set to true and then you don't need this file"
+}
