@@ -9,7 +9,7 @@
     @apply px-4 py-2.5 text-sm flex items-center justify-center
          text-white rounded-md font-medium 
 		 bg-gradient-to-tr from-primary to-purple-500 hover:shadow-xl
-     hover:shadow-primary/30 focus:ring-4 focus:ring-primary/30 transition-all duration-100;
+     hover:shadow-primary/30 focus:ring-4 focus:ring-primary/30 transition-all duration-100 disabled:opacity-50;
   }
   .input {
     @apply w-full border-gray-300 rounded-md focus:border-primary sm:text-sm 
@@ -135,4 +135,47 @@
 .page-leave-to {
   opacity: 0;
   transform: scale(0.99);
+}
+
+/* Animations*/
+
+.shake {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px);
+  }
+  10% {
+    transform: translate(-1px, -2px);
+  }
+  20% {
+    transform: translate(-2px, 0px);
+  }
+  30% {
+    transform: translate(2px, 2px);
+  }
+  40% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(-1px, 2px);
+  }
+  60% {
+    transform: translate(-2px, 1px);
+  }
+  70% {
+    transform: translate(2px, 1px);
+  }
+  80% {
+    transform: translate(-1px, -1px);
+  }
+  90% {
+    transform: translate(1px, 2px);
+  }
+  100% {
+    transform: translate(1px, -2px);
+  }
 }
